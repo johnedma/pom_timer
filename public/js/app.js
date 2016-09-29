@@ -7,7 +7,6 @@
   //main functionality
   startButton.on("click", countdown);
 
-
   //function definitions
   function countdown(){
     var secondsText = seconds.text();
@@ -15,7 +14,10 @@
     var minutesText = minutes.text();
     var minutesTextAsNumber = parseInt(minutesText);
 
-
+    if(minutesTextAsNumber === 0 && secondsTextAsNumber === 0){
+      // stop
+      return;
+    }
     if(secondsTextAsNumber === 0) {
       if(minutesTextAsNumber !== 0){
       var decreasedMinutesAsNumberByOne = minutesTextAsNumber - 1;
