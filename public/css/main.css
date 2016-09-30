@@ -3,5 +3,15 @@
  }
 
 #start {
-  font-size: 750%
+  font-size: 750%;
+}
+
+#break {
+  font-size: 750%;
+  display: none;
+}
+
+p.center {
+    text-align: center;
+    font-size: 750%;
 }
