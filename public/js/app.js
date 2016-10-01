@@ -5,11 +5,13 @@
   var seconds = $("#seconds");
   var minutes = $("#minutes");
   var breakButton = $("#break");
-  var pCenter = $('p.center');
+  var toptext = $("#toptext");
+  var pic = $("#pic");
   var isOnBreak = false;
   var timerInterval;
 
   //main functionality
+pic.hide();
   startButton.on("click", startTimer);
   breakButton.on("click", startBreak);
 
@@ -25,7 +27,7 @@
     // hide the break button
     breakButton.hide();
     // start the timer
-    pCenter.hide();
+
     startTimer();
 
   }
@@ -39,7 +41,7 @@
     var secondsTextAsNumber = parseInt(secondsText);
     var minutesText = minutes.text();
     var minutesTextAsNumber = parseInt(minutesText);
-
+    toptext.hide(1);
     if(minutesTextAsNumber === 0 && secondsTextAsNumber === 0){
       // stop
       clearInterval(timerInterval);
@@ -50,12 +52,17 @@
         startButton.attr('disabled', true);
         // unhide the break button
         breakButton.show();
+        toptext.text("GREAT JOB!");
+        toptext.show();
+        pic.show();
 
       }else {
-        seconds.text("15");
+        seconds.text("05");
         minutes.text("00");
         startButton.attr("disabled", false);
         isOnBreak = false;
+        toptext.text("ANOTHER ONE!");
+        toptext.show();
       }
       return;
     }

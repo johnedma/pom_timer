@@ -11,7 +11,11 @@
   display: none;
 }
 
-p.center {
-    text-align: center;
+#toptext {
     font-size: 750%;
+    text-align: center;
+}
+
+#pic {
+  width: 50px;
 }
