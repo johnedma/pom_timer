@@ -13,7 +13,7 @@
   var oldSrc = 'https://media.giphy.com/media/l0HFi6Elu4pZEP2ec/giphy.gif';
   var newSrc = 'http://juliewinegard.com/images/obama.gif';
 
-  document.body.style.backgroundColor = "black"
+  document.body.style.backgroundColor = "black";
 
 
   //main functionality
