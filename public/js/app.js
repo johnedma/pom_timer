@@ -10,13 +10,20 @@
   var isOnBreak = false;
   var timerInterval;
 
+  var oldSrc = 'https://media.giphy.com/media/l0HFi6Elu4pZEP2ec/giphy.gif';
+  var newSrc = 'http://juliewinegard.com/images/obama.gif';
+
+  document.body.style.backgroundColor = "black"
+
+
   //main functionality
-pic.hide();
+  pic.hide();
   startButton.on("click", startTimer);
   breakButton.on("click", startBreak);
 
-
   //function definitions
+  $("body").css("color", "white");
+
   function startBreak(){
     // on break
     isOnBreak = true;
@@ -29,13 +36,14 @@ pic.hide();
     // start the timer
 
     startTimer();
-
   }
+
   function startTimer(){
     if(!timerInterval){
       timerInterval = setInterval(countdown, 1000);
     }
   }
+
   function countdown(){
     var secondsText = seconds.text();
     var secondsTextAsNumber = parseInt(secondsText);
@@ -52,7 +60,7 @@ pic.hide();
         startButton.attr('disabled', true);
         // unhide the break button
         breakButton.show();
-        toptext.text("GREAT JOB!");
+        toptext.text("YOU'RE BALLIN!");
         toptext.show();
         pic.show();
 
@@ -61,8 +69,12 @@ pic.hide();
         minutes.text("00");
         startButton.attr("disabled", false);
         isOnBreak = false;
-        toptext.text("ANOTHER ONE!");
+        pic.hide();
+        $('img[src="' + oldSrc + '"]').attr('src', newSrc);
+
+        toptext.text("BACK AT IT AGAIN!");
         toptext.show();
+
       }
       return;
     }

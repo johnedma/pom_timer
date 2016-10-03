@@ -3,19 +3,20 @@
  }
 
 #start {
-  font-size: 750%;
+  font-size: 500%;
 }
 
 #break {
-  font-size: 750%;
+  font-size: 500%;
   display: none;
 }
 
 #toptext {
-    font-size: 750%;
+    font-size: 350%;
     text-align: center;
 }
 
 #pic {
-  width: 50px;
+  width: 500px;
+  left: 500px;
 }
