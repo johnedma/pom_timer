@@ -10,11 +10,10 @@
   var isOnBreak = false;
   var timerInterval;
 
-  var oldSrc = 'https://media.giphy.com/media/l0HFi6Elu4pZEP2ec/giphy.gif';
-  var newSrc = 'http://juliewinegard.com/images/obama.gif';
+                          var oldSrc = 'https://media.giphy.com/media/l0HFi6Elu4pZEP2ec/giphy.gif';
+                          var newSrc = 'http://juliewinegard.com/images/obama.gif';
 
-  document.body.style.backgroundColor = "black";
-
+                          document.body.style.backgroundColor = "black";
 
   //main functionality
   pic.hide();
@@ -22,7 +21,7 @@
   breakButton.on("click", startBreak);
 
   //function definitions
-  $("body").css("color", "white");
+                          $("body").css("color", "white");
 
   function startBreak(){
     // on break
@@ -72,7 +71,7 @@
         pic.hide();
         $('img[src="' + oldSrc + '"]').attr('src', newSrc);
 
-        toptext.text("BACK AT IT AGAIN!");
+        toptext.text("ROUND TRIP?");
         toptext.show();
 
       }

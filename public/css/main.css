@@ -14,6 +14,8 @@
 #toptext {
     font-size: 350%;
     text-align: center;
+    text-decoration: underline;
+    padding-top: 10px;
 }
 
 #pic {
@@ -21,12 +23,26 @@
   left: 500px;
 }
 
-#top {
-	background: white;
-	position: fixed;
-	}
+#plane {
+  margin-left: 3px;
+  width: 45px;
+  left: 45px;
+}
 
-	#top {
+.navbar {
+  color: black;
+  font-size: 150%;
+  padding-top: 11px;
+  background-color: white;
+  text-decoration: underline;
+}
+
+/*#top {
+	background-color: white;
+	position: fixed;
+	}*/
+
+	/*#top {
 		left: 0; right: 0;
 		height: 50px;
-		}
+		}*/
