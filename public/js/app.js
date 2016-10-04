@@ -13,7 +13,11 @@
                           var oldSrc = 'https://media.giphy.com/media/l0HFi6Elu4pZEP2ec/giphy.gif';
                           var newSrc = 'http://juliewinegard.com/images/obama.gif';
 
-                          document.body.style.backgroundColor = "black";
+// Background edits
+                          // document.body.style.backgroundColor = "black";
+                          $('body').css('background-image', 'url(' + "https://images8.alphacoders.com/405/405672.jpg" + ')');
+
+
 
   //main functionality
   pic.hide();
